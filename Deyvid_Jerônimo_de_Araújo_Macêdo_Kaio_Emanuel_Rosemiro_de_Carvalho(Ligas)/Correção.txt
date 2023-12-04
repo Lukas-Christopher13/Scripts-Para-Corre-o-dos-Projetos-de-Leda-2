@@ -1,0 +1,84 @@
+Alunos: Deyvid Jerônimo de Araújo Macêdo
+e Kaio Emanuel Rosemiro de Carvalho
+
+1- Aspectos relacionados com instalação (10%)
+
+a) Regras claras de como executar o projeto (qualidade das instruções)
+
+   [Pequeno problema]
+   *Novamente o problema da pasta 'data' se repete, esse problema tinha ocorrido na parte 1 do projeto. Não é
+    nada grave, e ocorre por conta do git. No caso se a pasta estiver vazia o git a deleta do projeto
+
+b) Execução do projeto sem demais problemas
+    
+   *Não tive problemas durante a execução.
+
+c) >> Um problema aqui pode invalidar o resto da correção <<
+
+   *Sem problemas que invalidam o resto do projeto.
+
+2- Aspectos relacionados com a corretude do projeto (70%)
+
+a) Correção das transformações
+
+    [Sem problemas]
+    *Filtrar o arquivo original preservando apenas os seguintes campos: (Arquivo matches_T1.csv é gerado sem problemas)
+     
+    [Pequeno problema]
+    *Considerando o arquivo gerado na T1 (matches_T1.csv), Criar um novo campo de data completa chamado full_date no formato DD/MM/AAAA 
+     de acordo com os dados das colunas date e year: Novamente temos o pequeno problema de que o dia 29 de fevereiro em anos bisextos é
+     ignorado pelo programa, passando a data para o dia primeiro de março. De resto todas as datas batem.
+     
+    [Sem problemas] 
+    *Considerando, o arquivo gerado na T2 (matches_T2.csv), filtrar apenas os jogos da liga inglesa "English Premier League" através 
+     do campo league: (Arquivo matches_F1.csv gerado sem problemas)
+     
+    [Sem problemas]
+    *Considerando, o arquivo gerado na F1 (matches_F1.csv), Filtrar os jogos que tiveram attendance superior a 20.000 pagantes: 
+    (Arquivo matches_F2.csv gerado sem problemas) 
+     
+b) Correção das ordenações
+
+   ***Obs: Novamente o grupo optou por realizar as ordenações em memória, ele geram os arquivos de "pior, melhor e médio caso" na pasta
+           "ordenacaoResultados" e em seguida os ordenam em memória.
+   
+   [Sem grandes problemas]
+   *Todos os algoritmos são executados de forma satisfatória. Primeiro são gerados os arquivos de pior, melhor e médio caso, que são salvos
+    em pastas referentes a cada algoritmo de ordenação. Em seguida os arquivos de melhor, pior e médio caso são carregados na memória 
+    e ordenados, e o seu tempo de execução é contabilizado para cada um dos três casos. 
+    
+   ** O único problema que observei foi que para "médio caso" de "heap sort" ordenando por "attendance" a primeira linha do arquivo que
+      indica as colunas estão duplicadas.
+     
+3- Aspectos de qualidade do código (20%)
+
+a) Modularização
+
+   *Sobre a função e o arquivo main: O grupo fez uma função 'main' muito grande e com muitas responsabilidades, esse função poderia ter sido 
+   dividida em outras funções menores para aumentar a legibilidade de código e facilitar seu entendimento. Sem falar que o grupo poderia utilizar
+   a estrutura de HashMap para substituir o estruturas 'switch/case', deixando o código mais limpo e fácil de se entender. 
+   
+   *O projeto possui pastas para cada tipo de algoritmo, e nelas existem algoritmos de ordenação para cada tipo de dado trabalhado pelo
+    grupo ("venue", "attendance" e "full date"). 
+    
+   *Continua tendo muita repetição de código, seria bem melhor utilizar uma interface comum a todos os métodos 'sort' para realizar as ordenações
+    do modo que foi entregue temos uma algoritmo diferente para cada tipo de dado. (String, int, Data) 
+   
+b) Algoritmos de ordenação
+
+4- Utilização das estruturas de Dados
+
+   [Falta de estruturas de dados]
+    *O maior problema desse grupo foi que eles utilizaram apenas duas estruturas de dados.
+
+   **Estruturas de dados utilizadas pelo grup:
+   
+     - ArrayList (Lista dinámica)
+     - Stack (Estrutura de pilha)
+     - Faltou a terceira estrutura de dados
+   
+   Obs: Ainda encontrei vários "vetores" ao longo do projeto, teria sido mais interessante substituí los pelas estruturas de dados
+        apresentadas durante a disciplina 
+
+
+   

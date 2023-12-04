@@ -1,0 +1,76 @@
+Arthur Felipe Muniz Sales (Senhas)
+
+1- Aspectos relacionados com instalação (10%)
+
+  [Sem Problemas]
+a) Regras claras de como executar o projeto (qualidade das instruções): (As regras foram claras)
+
+  [Sem Problemas]
+b) Execução do projeto sem demais problemas: (O projeto foi executado sem problemas)
+
+  [Sem Problemas]
+c) >> Um problema aqui pode invalidar o resto da correção <<
+
+2- Aspectos relacionados com a corretude do projeto (70%)
+
+a) Correção das transformações
+
+  ** O algoritmo demora muito para executar as transformações, tanto que tive que usar uma versão do arquivo com apenas 1000 registros.
+
+  [Sem Problemas]
+  -Transformar data para o formato a seguir DD/MM/AAAA :
+  
+  [Sem Problemas]
+  -Filtrar senha pela categoria Boa e Muito Boa :
+
+b) Correção das ordenações
+
+   -Os arquivos de "pior, médio e melhor caso" são gerados e em seguida ordenados em memória.
+
+   ** Ocorreu algum problema na ordenação que alguns valores aparecem desordenados no início. Alguns dos arquivos de pior, médio e melhor caso
+      possuem erros, e esse erro geralmente é alguma linha aleatória que não segue a ordem da ordenação no topo do arquivo csv.
+   
+   ** Os arquivos csv de pior melhor e médio caso, também não possuem o cabeçalho indicando o nome de cada coluna.
+   
+   ** Os arquivos de pior e melhor caso do tipo "data_month" estão invertidos. O arquivo de melhor caso é na realidade o de pior caso, e o
+      de pior caso é o melhor caso.
+   
+   De resto as ordenações ocorrem normalmente. 
+   
+3- Aspectos de qualidade do código (20%)
+
+  [Sem grandes problemas]
+a) Modularização
+    
+   - O projeto é relativamente bem organizado, o'que peca mesmo é o tamanho de alguns dos arquivos com a 'fachada' que tem +1700 linhas,
+     junto aos arquivos dos algoritmos de ordenação que são bem grandinhos.
+     
+   - Outro problema é que os arquivos de pior, melhor e médio caso ficam todos juntos na mesma pasta, dificultando a análise, teria sido bom 
+     separá-los em pastas. 
+    
+  [Sem grandes problemas]
+b) Algoritmos de ordenação
+
+   - Os algoritmos estão ok, e todos funcionam. Porém há muita repetição de código desnecessária visto que foi criada uma versão do
+     mesmo algoritmos para cada tipo de dado a ser ordenado. O grupo poderia ter pensado em uma solução que utiliza uma interface comum 
+     a todos os objetos a serem ordenados para evitar a duplicação de código.
+
+
+4- Utilização das estruturas de Dados
+
+
+   **Estruturas de dados utilizadas pelo grup:
+   
+     Utilizou estruturas de dados próprias e não as do java, o'que é bom.
+   
+     - ListaEncadeada
+     - HashMap 
+     - Fila 
+   
+   Obs: Encontrei vários "vetores" ao longo do projeto, teria sido mais interessante substituí los pelas estruturas de dados
+        apresentadas durante a disciplina. Sem falar que os algoritmos de ordenação não possuem estruturas de dados, eles continuam
+        utilizando vetores.  
+        
+    -Achei que as estruturas de dados foram pouco aproveitadas ao longo do projeto 
+
+

@@ -1,0 +1,72 @@
+Grupo : Mikaelle dos Santos Oliveira.
+
+1- Aspectos relacionados com instalação (10%)
+
+  [Sem Problemas]
+a) Regras claras de como executar o projeto (qualidade das instruções): (As instruções foram simples e não tive problemas para rodar o projeto)
+
+  [Sem Problemas] 
+b) Execução do projeto sem demais problemas: (O projeto foi executado sem problemas)
+
+  [Sem Problemas]
+c) >> Um problema aqui pode invalidar o resto da correção <<
+
+2- Aspectos relacionados com a corretude do projeto (70%)
+
+a) Correção das transformações
+
+  [Sem Problemas]
+  - Filtrar o arquivo original preservando apenas certos campos.
+  
+  [Sem Problemas]
+  - Criar um novo campo de data completa chamado full_date no formato DD/MM/AAAA de acordo com os dados das colunas date e year
+   * Os dados da aluno por vez se encontram no formato 1/12/2001 em vez de 01/12/2001. Mas creio que isso não seja problema. De resto está tudo
+     correto
+
+  [Errado]
+  - Considerando, o arquivo gerado na matches_T2.csv, filtrar apenas os jogos da liga inglesa "English Premier League" através do campo league.
+   * O erro na filtragem persiste na nova versão do projeto. Além de filtrar por "English Premier League" o projeto filtra os 
+     arquivos por" Barclays Premier League" oque não foi solicitado.
+     
+  [Sem Problemas]
+  - Considerando, o arquivo gerado na F1 (matches_F1.csv), Filtrar os jogos que tiveram atendimento superior a 20.000 pagantes.
+ 
+b) Correção das ordenações
+
+    **OBS: Todas as ordenações ocorrem em memória, os arquivos de 'pior, melhor e médio caso' são gerados e em seguida ordenados. 
+
+   - As ordenações ocorre sem grandes problemas, a única coisa que encontrei foi que para 'venue' não existe ordenação por 'counting sort'
+     e por algum motivo o grupo fez ordenações por 'bubble sort', oque não foi pedido no projeto.  
+
+3- Aspectos de qualidade do código (20%)
+
+  [Pouca Modularização]
+a) Modularização
+  
+ - Novamente, há pouca modularização, todos os algoritmos de ordenação estão em um único arquivo em vez de cada um ter seu arquivo 
+   separado, sem  falar que há duplicação de código na parte dos algoritmos, cada algoritmo de ordenação tem duas versões uma para 
+   'int' e outra para 'String' Esse problema poderia ter sido evitado utilizando uma solução com polimorfismo. Além de que temos pouca
+   divisão de responsabilidades nos arquivos, a classe "Leda" por exemplo tem +2000 linhas oque dificulta a sua leitura.
+ - Além de que os arquivos de 'melhor, pior e médio caos' junto aos arquivos de tratamento ficam todos juntos na mesma pasta, de forma
+   bem desorganizada.  
+       
+  [Sem Problemas]
+b) Algoritmos de ordenação
+   
+   - Não temos problemas referentes aos algoritmos de ordenação, apenas a questão deles estarem todos em um único arquivo.
+
+
+4- Utilização das estruturas de Dados
+
+   **Estruturas de dados utilizadas pelo grup:
+   
+     - ArrayList (Lista Dinámica)
+     - HashMap  (Tabela Hash)
+     - TreeMap (Tabela Hash + Árvore RB)
+   
+   Obs: As funções de ordenação ainda trabalham com arrays multidimensionais, poderia ter substituídos esses arrays por estruturas de
+        dados que foram apresentadas ao longo da disciplina 
+        
+   Obs: A estruturas de dados foram inseridas apenas na classe "Leda.java", poderia ter utilizado elas para melhorar as funções de
+        ordenação.
+
